@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserSearch component renders UserSearch 1`] = `
+<DocumentFragment>
+  <input />
+  <button>
+    Search users
+  </button>
+</DocumentFragment>
+`;

@@ -10,8 +10,6 @@ describe('User reducer', () => {
             error: null
         };
 
-
-
         const action = setUser({
             name: 'Ryan-Diff'
         });
