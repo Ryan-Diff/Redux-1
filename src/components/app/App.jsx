@@ -1,5 +1,10 @@
 import React from 'react';
+import UserSearch from '../../user/UserSearch';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <UserSearch />
+    </>
+  );
 }
