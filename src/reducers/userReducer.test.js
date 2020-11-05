@@ -4,7 +4,7 @@ import { setUser, setLoading } from '../actions/userActions';
 describe('User reducer', () => {
     it('handles the SET_USER action', () => {
         const state = {
-            user: {},
+            userProfile: {},
             userRepos: [],
             search: '',
             loading: true,
@@ -12,14 +12,14 @@ describe('User reducer', () => {
         };
 
         const action = setUser({
-           user: { name: 'Ryan-Diff' },
-           userRepos: [{ repo: 'repo' }]
+            userProfile: { name: 'Ryan-Diff' },
+            userRepos: [{ repo: 'repo' }]
         });
 
         const newState = reducer(state, action);
 
         expect(newState).toEqual({
-            user: { name: 'Ryan-Diff' },
+            userProfile: { name: 'Ryan-Diff' },
             userRepos: [{ repo: 'repo' }],
             search: '',
             loading: true,
@@ -29,7 +29,7 @@ describe('User reducer', () => {
 
     it('handles the SET_LOADING action', () => {
         const state = {
-            user: {},
+            userProfile: {},
             userRepos: [],
             search: '',
             loading: true,
@@ -41,7 +41,7 @@ describe('User reducer', () => {
         const newState = reducer(state, action);
 
         expect(newState).toEqual({
-            user: {},
+            userProfile: {},
             userRepos: [],
             search: '',
             loading: false,

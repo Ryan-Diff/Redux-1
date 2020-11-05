@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`UserInfo component Renders a users GitHub info 1`] = `
 <DocumentFragment>
-  <input />
-  <button>
-    Search users
-  </button>
   <h1 />
   <a>
     GitHub Link: 
