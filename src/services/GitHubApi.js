@@ -8,5 +8,12 @@ export const getUser = async(userName) => {
           userProfile: json.html_url
       }));
 
-    return userProfile;  
+const userRepos = await fetch(`https://api.github.com/users/${userName}/repos`)
+  .then(res => res.json())
+  .then(json => json.map(userRepo => ({
+    name: userRepo.nam,
+    url: userRepo.html_url
+  })));
+
+  return { userProfile, userRepos };  
 };
